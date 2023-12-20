@@ -1,0 +1,280 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font-family: sans-serif;
+}
+.nav-bar
+{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.navbar
+{
+	background-image: linear-gradient(to right, #a517ba, #5f1782) ;
+	padding: 0 !important;
+
+}
+.navbar-brand img
+{
+	height: 40px;
+	padding-left: 20px;
+}
+
+.navbar-nav li
+{
+	padding: 0 10px;
+}
+/* Navbar List Items Hover Effects */
+
+.navbar-nav li a.nav-link {
+    color: #fff; /* Default color */
+    font-weight: 600;
+    float: right;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a.nav-link:hover {
+    color: #ffcc00; /* Your hover color */
+}
+
+.fa-bars
+{
+	color: #fff;
+	font-size: 30px !important;
+}
+
+.navbar-toggler
+{
+	outline: none !important;
+}
+
+/*------------banner section------------------*/
+
+
+
+#banner {
+    background: url('images/home11.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    color: #fff;
+    padding-top: 10%; /* Adjusted padding */
+    min-height: 100vh; /* Take up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* Mobile Styles for Banner Section */
+@media screen and (max-width: 768px) {
+    #banner {
+        padding-top: 40%; /* Adjusted padding */
+    }
+
+    .promo-title {
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .custom-box {
+        text-align: left; /* Center content */
+        margin-top: 20px; /* Adjusted margin */
+    }
+
+    .btn-primary {
+        margin-top: 20px; /* Adjusted margin */
+    }
+}
+
+.promo-title
+{
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+
+#banner a
+{
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.bottom-img
+{
+	width: 100%;
+}
+ .custom-box {
+      background: linear-gradient(to right, #4CAF50, #2196F3); /* Adjust gradient colors */
+      color: #fff; /* Text color for better visibility */
+      border-radius: 10px; /* Adjust border-radius as needed */
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+#banner .btn-primary
+{
+	box-shadow: none;
+	padding: 8px 25px;
+	border: none;
+	background-image: linear-gradient(to right, #fdd200, #fdd200 );
+}
+
+
+/*------------aboutus section------------------*/
+#about-us
+{
+	background: #f8f9fa;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.about-title
+{
+	color: #6495ED;
+	font-size: 36px;
+	font-weight: 600;
+	margin-top: 8%;
+
+}
+#about-us .btn-primary
+{
+	box-shadow: none;
+	padding: 8px 25px;
+	border: none;
+	background-image: linear-gradient(to right, #fdd200, #fdd200 );
+
+}
+
+/*------------social-media Section------------------*/
+
+#social-media
+{
+	background-color: #f8f9fa;
+	padding: 100px 0;
+}
+#social-media p
+{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 50px;
+	color: #6495ED;
+}
+
+.social-icons img
+{
+	width: 60px;
+	transition: 0.5s;
+}
+
+.social-icons a:hover img
+{
+	transform: translateY(-10px);
+}
+
+
+/*------------footer Section------------------*/
+
+#footer
+{
+	background-image: linear-gradient(to right, #a517ba, #5f1782 );
+	color: #fff;
+}
+
+.footer-img
+{
+	width: 100%;
+
+}
+
+.footer-box
+{
+	padding: 20px;
+	
+
+}
+
+
+
+.footer-box img
+{
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+hr
+{
+	background-color: #fff;
+
+}
+
+.copyright
+{
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	text-align: center;
+
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    #nav-bar .navbar-brand img {
+        height: 30px; /* Adjusted logo height for mobile */
+    }
+
+    #nav-bar nav.navbar-nav {
+        padding-top: 10px; /* Adjusted top padding */
+    }
+
+    #nav-bar ul.navbar-nav li {
+        display: block;
+        margin-bottom: 5px; /* Adjusted bottom margin */
+    }
+
+    #nav-bar ul.navbar-nav a.nav-link {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    #nav-bar .navbar-toggler {
+        padding: 8px; /* Adjusted padding for the toggler */
+    }
+
+
+    .about-title {
+        font-size: 20px; /* Adjusted font size */
+        margin-top: 5%;
+    }
+
+    #about-us,
+    #social-media {
+        padding: 30px 0; /* Adjusted padding */
+    }
+
+    #social-media p {
+        font-size: 20px; /* Adjusted font size */
+        margin-bottom: 10px; /* Adjusted margin */
+    }
+
+    .social-icons img {
+        width: 30px; /* Adjusted width */
+    }
+
+    .footer-box img {
+        width: 80px; /* Adjusted width */
+        margin-bottom: 5px; /* Adjusted margin */
+    }
+}

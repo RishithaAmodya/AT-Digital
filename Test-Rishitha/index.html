@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AT DIGITAL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  <!-- Add AOS library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  <!-----------------------smooth scroll-------------------------->
+
+<!-- Add this script in your head section -->
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+    }
+
+    section {
+      transition: background-color 0.5s ease;
+    }
+
+     img {
+      max-width: 100%;
+      height: auto;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+  
+
+    p, button {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    button:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+
+
+
+
+
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize AOS
+      AOS.init({
+        offset: 200, // Adjust the offset as needed
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Animation easing
+      });
+
+      // Initialize SmoothScroll
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        offset: 50,
+      });
+    
+
+    // Automatically close mobile menu after clicking a link
+      $('.navbar-nav a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <section id="nav-bar">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/LogoFooter.png" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#top">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">CONTACT US</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">CAREERS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+
+  <!--------------------banner section------------------------->
+  <section id="banner">
+  	<div class="container">
+  		<div class="row align-items-center min-vh-100">
+  			<div class="col-md-6 custom-box " data-aos="fade-right"> 
+  				<p class="promo-title "> <span>We Crush Your<span><br>
+				<span>Competitors, Goals, And</span><br>
+				<span>Sales Records - Without<span><br>
+				<span>The B.S.</span></p>
+				<button type="button" class="btn btn-primary">GET FREE CONSULTATION</button>
+  			</div>
+  			
+  			
+  		</div>
+	</div>
+  </section>
+
+
+
+<!-----------------------About us-------------------------->
+<section id="about-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 about-us" data-aos="fade-right">
+				<img src="images/network.png" class="image-fluid shrink-img">
+			</div>
+			<div class="col-md-6" data-aos="fade-left">
+				<p class="about-title">Web & Mobile App Development</p>
+				<p>Your web and mobile Apps are pieces of the puzzle to grow your
+business. We use frameworks which tailor content and engagement
+methods to respond to different intents shown by your potential
+customers who interact with your business online.</p>
+				<button type="button" class="btn btn-primary" >LEARN MORE</button>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+
+
+<section id="about-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 about-us" data-aos="fade-right">
+				<p class="about-title">Digital Strategy Consulting</p>
+				<p>Your digital strategy should complement the overall marketing strategy
+of the company. In online marketing, each component will never work in
+isolation and every business needs a different mix. We provide a clear
+concept and strategic overview to find the most efficient model for
+your business.</p>
+				<button type="button" class="btn btn-primary" >LEARN MORE</button>
+			</div>
+			<div class="col-md-6" data-aos="fade-left">
+				
+				<img src="images/loupe.png" class="image-fluid shrink-img"  style="margin-left: auto;  height: 350px;">
+
+
+
+
+
+			</div>
+			
+		</div>
+	</div>
+
+</section>
+
+<!-----------------------Social media section-------------------------->
+<section id="social-media">
+	<div class="container text-center" data-aos="fade-up">
+		<p>FIND US ON SOCIAL MEDIA</p>
+		<div class="social-icons">
+			<a href="#"><img src="images/facebook-icon.png"></a>
+			<a href="#"><img src="images/instagram-icon.png"></a>
+			<a href="#"><img src="images/twitter-icon.png"></a>
+			<a href="#"><img src="images/whatsapp-icon.png"></a>
+			<a href="#"><img src="images/linkedin-icon.png"></a>
+			<a href="#"><img src="images/snapchat-icon.png"></a>
+		</div>
+	</div>
+</section>
+
+<!-----------------------Footer section-------------------------->
+<section id="footer">
+	
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-4 footer-box">
+				<img src="images/LogoFooter.png">
+				<P> Your goal is our target. Not anything in between. We use
+online marketing platforms and tools to achieve single
+objective - your business results. </P>
+			</div>
+			<div class="col-md-4 footer-box">
+				<p><b>OUR TECHNOLOGIES</b></p>
+				<p>ReactJS</p>
+					<p>Gatsby</p>
+					<p>NextJS</p>
+					<p>NodeJS</p>
+					<p>GraphQL</p>
+					<p>Laravel</p>
+
+			</div>
+			<div class="col-md-4 footer-box">
+				<p><b>OUR SERVICES</b></p>
+				<p>Social Media Marketing</p>
+				<p>Web & Mobile App</p>
+				<p>Development</p>
+				<p>Data & Analytics
+				<p>Google Marketing Solutions</p>
+				<p>Search Engine Optimization</p>
+			
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Privacy Policy | Terms & Conditions</p>
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
